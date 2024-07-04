@@ -1,0 +1,93 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #111111d0;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(15px);
+    top:0;
+    z-index: 100;
+    animation: fade-in 0.2s;
+}
+
+#c2 {
+    animation: fade-up 1.2s;
+    font-size: 16px;
+}
+
+#navbar h2 a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 40px;
+    animation: fade-in 1.5s;
+}
+
+#navbar form {
+    display: flex;
+    gap: .9rem;
+    animation: fade-in 1.5s;
+    
+}
+
+#navbar input{
+    padding: .2rem .9rem;
+    border-radius: 4px;
+    border: none;
+}
+
+#foooter{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem;
+    margin-right: 5px;
+    background-color: #111111e7;
+    z-index: 100;
+    width: 100%;
+    position: bottom;
+    bottom: 0;
+    
+    
+}
+
+#navbar form button {
+    background-color: #f7d354;
+    border: 2px solid #f7d354;
+    border-radius: 4px;
+    color: #000;
+    padding: .3rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#navbar form button:hover{
+    background-color: transparent;
+    color: #f7d354;
+    transform: scale(1.1);
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;
+}
+
+100% {
+    opacity: 1;
+}
+}
+
+@keyframes fade-up {
+    0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);   
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}}
