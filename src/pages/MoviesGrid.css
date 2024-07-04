@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 .container .title {
-    color: #fff;
-    font-size: 2.5rem;
+    color: #ffffff;
+    font-size: 2.4rem;
     text-align: center;
-    margin: 9rem 0 1rem;
-    animation: fade-up 1.2s;
+    margin: 10rem 0 1rem;
+    animation: fade-up 2s;
+    font-family: 'lora';
+    font-style: italic;
 }
 
 .title .query-text {

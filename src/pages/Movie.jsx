@@ -6,7 +6,7 @@ import {
     BsHourglassSplit,
     BsFillFileEarmarkTextFill
 }from 'react-icons/bs';
-
+import Loader from "../loader";
 import MovieCard from "../components/MovieCard";
 import './Movie.css';
 
@@ -30,7 +30,10 @@ const Movie = () => {
         currency: "USD",
     })
   }
- 
+  const [loading, setLoading] = useState(true)
+  useEffect(() =>{
+  setTimeout(() => setLoading(false), 200)
+  }, [])
 
   useEffect(() => {
     const movieUrl = `${moviesURL}${id}?${apiKey}`;
@@ -38,10 +41,13 @@ const Movie = () => {
   }, []);
 
     return ( 
+        
     <div className="movie-page">
       {movie && (
     <>
-    <MovieCard movie={movie} showLink={false}/>
+      {
+    loading ? <Loader />:
+    <MovieCard movie={movie} showLink={false}/>}
     <p className="tagline">{movie.tagline} </p>
     <div className="info">
         <h3>

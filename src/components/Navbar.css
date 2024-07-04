@@ -9,11 +9,10 @@
     backdrop-filter: blur(15px);
     top:0;
     z-index: 100;
-    animation: fade-in 0.2s;
 }
 
 #c2 {
-    animation: fade-up 1.2s;
+    animation: fade-up 1.6s;
     font-size: 16px;
 }
 
@@ -21,14 +20,20 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    font-size: 40px;
-    animation: fade-in 1.5s;
+    font-size: 32px;
+    font-family: 'lora';
+    visibility:visible;
+    animation: fade-in 2.5s;
+}
+
+#navbar h2 a:hover {
+    transform: scale(1.05);
 }
 
 #navbar form {
     display: flex;
     gap: .9rem;
-    animation: fade-in 1.5s;
+    animation: fade-in 2.5s;
     
 }
 
@@ -36,6 +41,8 @@
     padding: .2rem .9rem;
     border-radius: 4px;
     border: none;
+    font-size: 13px;
+    font-family: 'lora';
 }
 
 #foooter{
@@ -50,6 +57,7 @@
     width: 100%;
     position: bottom;
     bottom: 0;
+    animation: fade-in 7.5s;
     
     
 }
@@ -74,16 +82,18 @@
 
 @keyframes fade-in {
     0% {opacity: 0;
+        visibility: hidden;
 }
 
 100% {
-    opacity: 1;
+    opacity: 0.5;
 }
 }
 
 @keyframes fade-up {
     0% {
     opacity: 0;
+    visibility: hidden;
     transform: translateY(30px) scale(0.9);   
 }
 
