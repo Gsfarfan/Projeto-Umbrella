@@ -4,7 +4,8 @@
     font-size: 2.4rem;
     text-align: center;
     margin: 10rem 0 1rem;
-    animation: fade-up 2s;
+    opacity: 0;
+    animation: fade-up 0.7s ease-in-out 0.3s forwards;
     font-family: 'lora';
     font-style: italic;
 }
@@ -80,7 +81,7 @@
 }
 
 100% {
-    opacity: 1;
+    opacity: 0.5;
     transform: translateY(0px) scale(1);
 }
 }
@@ -103,5 +104,70 @@
 100% {
     opacity: 1;
 }
+}
+
+@media (max-width: 1200px) {
+    .container .title {
+        font-size: 2rem;
+        margin: 8rem 0 1rem;
+    }
+
+    .movies-container div {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container .title {
+        font-size: 1.8rem;
+        margin: 10rem 0 0.5rem;
+    }
+
+    .movies-container {
+        padding: 1.5rem;
+        
+    }
+
+    .movies-container div {
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .title {
+        font-size: 1.6rem;
+        margin: 10rem 0 0.5rem;
+    }
+
+    .movies-container {
+        padding: 1rem;
+    }
+
+    .movies-container div {
+        width: 60%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container .title {
+        font-size: 1.4rem;
+        margin: 8.5rem 0 0.6rem;
+    }
+
+    .movies-container {
+        padding: 0.5rem;
+    }
+
+    .movies-container div {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .movies-container div a {
+        padding: 0.8rem 0.4rem;
+    }
 }
 

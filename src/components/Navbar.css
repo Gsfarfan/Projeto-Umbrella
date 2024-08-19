@@ -12,7 +12,8 @@
 }
 
 #c2 {
-    animation: fade-up 1.6s;
+    opacity: 0;
+    animation: fade-up 0.4s ease-in-out 0.1s forwards;
     font-size: 16px;
 }
 
@@ -22,8 +23,9 @@
     gap: .5rem;
     font-size: 32px;
     font-family: 'lora';
-    visibility:visible;
-    animation: fade-in 2.5s;
+    opacity: 0;
+    animation: fade-in 1.1s ease-in-out 0.2s forwards;
+    
 }
 
 #navbar h2 a:hover {
@@ -33,7 +35,8 @@
 #navbar form {
     display: flex;
     gap: .9rem;
-    animation: fade-in 2.5s;
+    opacity: 0;
+    animation: fade-in 1.1s ease-in-out 0.2s forwards;
     
 }
 
@@ -53,11 +56,9 @@
     padding: 2rem 0 2rem;
     margin-right: 5px;
     background-color: #111111e7;
-    z-index: 100;
     width: 100%;
-    position: bottom;
-    bottom: 0;
-    animation: fade-in 7.5s;
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out 0.4s forwards;
     
     
 }
@@ -101,3 +102,70 @@
     opacity: 1;
     transform: translateY(0px) scale(1);
 }}
+
+@media (max-width: 1200px) {
+    #navbar {
+        padding: 1.5rem 3rem;
+    }
+
+    #navbar h2 a {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #navbar {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    #navbar form {
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+    #navbar input {
+        width: 100%;
+    }
+    #navbar form button {
+        padding-left: 47%;
+        padding-block: 0.3px;
+    }
+    #navbar h2 a {
+        font-size: 24px;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    #navbar h2 a {
+        font-size: 24px;
+        padding-bottom: 0.5rem;
+    }
+
+
+    #foooter {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    #navbar h2 a {
+        font-size: 20px;
+    }
+
+
+    #foooter {
+        font-size: 0.9rem;
+    }
+}

@@ -32,7 +32,7 @@ const Movie = () => {
   }
   const [loading, setLoading] = useState(true)
   useEffect(() =>{
-  setTimeout(() => setLoading(false), 200)
+  setTimeout(() => setLoading(false), 600)
   }, [])
 
   useEffect(() => {

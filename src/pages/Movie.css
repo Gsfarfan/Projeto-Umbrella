@@ -21,6 +21,7 @@
   .movie-page .movie-card h2,
   .movie-page .movie-card p {
     margin-bottom: 1rem;
+    margin-top: 1rem;
     border-radius: 5%;
     max-width: 400px;
     
@@ -45,12 +46,14 @@
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    animation: fade-up 1.2s;
+    opacity: 0;
+    animation: fade-up 1.1s ease-in-out 0.2s forwards;
   }
   
   .info {
     margin-bottom: 1.5rem;
-    animation: fade-up 1.2s;
+    opacity: 0;
+    animation: fade-up 1.1s ease-in-out 0.2s forwards;
   }
   
   .info h3 {
@@ -58,12 +61,14 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    animation: fade-up 1.2s;
+    opacity: 0;
+    animation: fade-up 1.1s ease-in-out 0.2s forwards;
   }
   
   .description p {
     line-height: 1.4rem;
-    animation: fade-up 1.2s;
+    opacity: 0;
+    animation: fade-up 1.1s ease-in-out 0.2s forwards;
   }
 
 
@@ -78,4 +83,66 @@
     opacity: 1;
     transform: translateY(0px) scale(1);
 }
+}
+
+@media (max-width: 992px) {
+
+  .movie-page .movie-card img {
+    margin-top: 3rem;
+  }
+  .movie-page .movie-card p {
+      max-width: 100%;
+  }
+
+  .movie-page .movie-card h2 {
+      font-size: 1.8rem;
+  }
+
+  .movie-page .movie-card p {
+      margin-left: 0;
+      justify-content: center;
+  }
+
+  .tagline {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .movie-page .movie-card h2 {
+      font-size: 1.6rem;
+  }
+
+  .tagline {
+      font-size: 1.1rem;
+  }
+
+  .description p {
+      line-height: 1.2rem;
+  }
+
+  .movie-page .movie-card img {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .movie-page .movie-card img {
+    margin-top: 1rem;
+  }
+
+
+  .tagline {
+      font-size: 1rem;
+  }
+
+  .description p {
+      line-height: 1rem;
+  }
+
+  .info {
+    margin: 15px ;
+  }
 }

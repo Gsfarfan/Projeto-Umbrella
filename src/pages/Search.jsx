@@ -23,7 +23,7 @@ const Search = () => {
         setMovies(data.results); }
         const [loading, setLoading] = useState(true)
         useEffect(() =>{
-        setTimeout(() => setLoading(false), 300)
+        setTimeout(() => setLoading(false), 800)
         }, [])
 
     
